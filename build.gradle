@@ -10,8 +10,9 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
+apply plugin: 'war'
 
-jar {
+war {
     baseName = 'barfly'
     version =  '0.1.0'
 }
@@ -25,6 +26,7 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
     compile("com.google.zxing:core:3.2.1")
     compile("com.google.zxing:javase:3.2.1")
     testCompile("junit:junit")
