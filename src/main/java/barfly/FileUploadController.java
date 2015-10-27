@@ -127,7 +127,7 @@ public class FileUploadController {
             }
 
         } catch (RuntimeException re) {
-            throw new RuntimeException(re);
+            return null;
         }
 
         return results;
