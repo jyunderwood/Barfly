@@ -6,6 +6,8 @@ A [Spring Boot](http://projects.spring.io/spring-boot/) application that uses th
 
 ## Up and running
 
+Requires Java 8.
+
 Have [gradle](https://gradle.org) installed or use the gradle wrapper.
 
 ```
